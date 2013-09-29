@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Music Form</title>
+	</head>
+	<body>
+		<form action="http://www.example.com/review.php" method="get">
+			<fieldset>
+				<legend>
+					Personal Information:
+				</legend>
+				<form action="http://www.example.com/login.php"><p><input type="text" name="username" size="20" maxlength="30" placeholder="First Name" /> </p></form>
+				<form action="http://www.example.com/login.php"><p><input type="text" name="username" size="20" maxlength="30" placeholder="Last Name" /> </p></form>
+				<form action="http://www.example.com/login.php"><p><input type="text" name="username" size="20" maxlength="30" placeholder="Email Address" /> </p></form>
+				<form action="http://www.example.com/login.php"><p><input type="text" name="telephone" size="20" maxlength="30" placeholder="Telephone" /> </p></form>
+			</fieldset>
+			
+			<fieldset>
+				<legend>
+					More About Yourself:
+				</legend>
+				
+				<form action="http://www.example/com/profile.php"> <p>1. Favorite site to listen to music:
+					<br />
+					<input type="checkbox" name="service" value="iTunes" /> iTunes
+					<input type="checkbox" name="service" value="Youtube" />Youtube
+					<input type="checkbox" name="service" value="Vimeo" /> Vimeo
+					<input type="checkbox" name="service" value="Other" /> Other </p>
+				<label>If "Other", please specify:<input type="text" name="Other" /></label>	
+				</form>
+				
+				<form action="http://www.example.com/profile.php">
+					<p>2. Do you play any of the following instruments?(You can select up to three)</p>
+					<select name="instruments" size="5" multiple="multiple">
+						<option value="guitar">Guitar</option>
+						<option value="drums">Keyboard</option>
+						<option value="keyboard">Drums</option>
+						<option value="Violin">Violin</option>
+						<option value="Other">Other</option>
+					</select>
+				</form>
+				
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>Final Words</legend>
+				<form action="http://www.example.com/upload.php" method="post">
+					<p>3. If you would like, please upload some of your work to us.</p>
+					<p style="border-style:solid; border-color:##FF0000;"><input type="file" name="user-song" size="20" maxlength="30"/> </p>
+					<input type="submit" value="Upload" />
+				</form>
+				
+				<p><label for="comments">4. Please add any comments you would like to add:</label>
+					<br />
+					<textarea rows="4" cols="40" id="comments"></textarea>
+				</p>
+				<br />
+			</fieldset>
+			<input type="submit" value="Submit Form" />
+		</form>
+	</body>
+</html>
+
